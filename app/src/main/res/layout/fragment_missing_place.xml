@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MissingPlaceFrag"
+    android:background="@drawable/main_back">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginHorizontal="20dp"
+            android:background="@drawable/logo"
+            android:fontFamily="cursive"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="@string/travo"
+            android:textColor="@color/white"
+            android:textSize="40sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logo">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="8dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardUseCompatPadding="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/add_place" />
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/add_some_information_about_a_place_if_the_place_is_added_it_will_appear_publicly" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:startIconTint="@color/main"
+                        app:hintTextColor="@color/main"
+                        android:hint="@string/place_name_required"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/main"
+                        app:boxStrokeWidth="2dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:boxStrokeColor="@color/main"
+                        app:boxBackgroundColor="@color/material_on_background_emphasis_high_type"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:endIconMode="clear_text"
+                        app:helperText=""
+                        app:helperTextTextColor="@color/red"
+                        app:boxCornerRadiusBottomStart="10dp"
+
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtPlaceName"
+                            android:textSize="18sp"
+                            android:inputType="textCapSentences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:startIconTint="@color/main"
+                        app:hintTextColor="@color/main"
+                        android:hint="@string/address_required"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/main"
+                        app:boxStrokeWidth="2dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:boxStrokeColor="@color/main"
+                        app:boxBackgroundColor="@color/material_on_background_emphasis_high_type"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:endIconMode="clear_text"
+                        app:helperText=""
+                        app:helperTextTextColor="@color/red"
+                        app:boxCornerRadiusBottomStart="10dp"
+
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtAddress"
+                            android:textSize="18sp"
+                            android:inputType="textCapSentences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <TextView
+                        android:id="@+id/textView5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:textColor="@color/black"
+                        android:padding="10dp"
+                        android:textSize="20sp"
+                        android:text="@string/add_more_details" />
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:startIconTint="@color/main"
+                        app:hintTextColor="@color/main"
+                        android:hint="@string/category"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/main"
+                        app:boxStrokeWidth="2dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:boxStrokeColor="@color/main"
+                        app:boxBackgroundColor="@color/material_on_background_emphasis_high_type"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:endIconMode="clear_text"
+                        app:helperText=""
+                        app:helperTextTextColor="@color/red"
+                        app:boxCornerRadiusBottomStart="10dp"
+
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtCategory"
+                            android:textSize="18sp"
+                            android:inputType="textCapSentences"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <com.google.android.material.textfield.TextInputLayout
+
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        app:startIconTint="@color/main"
+                        app:hintTextColor="@color/main"
+                        android:hint="@string/telephone_number"
+                        android:layout_marginTop="10dp"
+                        android:textColorHint="@color/main"
+                        app:boxStrokeWidth="2dp"
+                        android:layout_marginHorizontal="10dp"
+                        app:boxStrokeColor="@color/main"
+                        app:boxBackgroundColor="@color/material_on_background_emphasis_high_type"
+                        app:boxCornerRadiusTopStart="10dp"
+                        app:boxCornerRadiusTopEnd="10dp"
+                        app:endIconMode="clear_text"
+                        android:layout_marginBottom="10dp"
+                        app:helperText=""
+                        app:helperTextTextColor="@color/red"
+                        app:boxCornerRadiusBottomStart="10dp"
+
+                        app:boxCornerRadiusBottomEnd="10dp"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/edtNumber"
+                            android:textSize="18sp"
+                            android:inputType="phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            />
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <Button
+                        android:id="@+id/btnAddPlace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginVertical="10dp"
+                        android:layout_weight="1"
+                        android:text="@string/add_place" />
+
+                    <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textStyle="bold"
+                    android:textColor="@color/Blue3"
+                    android:padding="10dp"
+                    android:text="@string/we_will_email_you_about_the_status_of_your_edits"
+                        android:layout_gravity="center_horizontal"/>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

@@ -1,0 +1,37 @@
+<resources>
+    <string name="app_name">Recycle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="travo">TRAVO</string>
+    <string name="places_n_amp_activities"><![CDATA[Places \n& Activities]]></string>
+    <string name="hotels">Hotels</string>
+    <string name="add_place">Add Place</string>
+    <string name="add_some_information_about_a_place_if_the_place_is_added_it_will_appear_publicly">Add some information about a place. If the place is added it will appear publicly</string>
+    <string name="place_name_required">Place Name (required)*</string>
+    <string name="address_required">Address (required)*</string>
+    <string name="add_more_details">Add More Details</string>
+    <string name="category">Category</string>
+    <string name="telephone_number">Telephone Number</string>
+    <string name="we_will_email_you_about_the_status_of_your_edits">We will email you about the status of your edits</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="add_missing_places">Add Missing Places</string>
+    <string name="let_us_know_your_feedbacks">Let Us Know Your Feedbacks</string>
+    <string name="log_out">Log Out</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="send_mail">Send Mail</string>
+    <string name="update">Update</string>
+    <string name="get_direction">Get Direction</string>
+    <string name="description">Description</string>
+    <string name="comments">Comments</string>
+    <string name="add_comment">Add Comment</string>
+    <string name="title_activity_chat">Chat</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
